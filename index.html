@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h3 class="navbar__logo">Jarlarex Gemini</h3>
+        <button class="navbar__button" id="themeToggler">
+            <i class='bx bx-sun'></i>
+        </button>
+    </nav>
+
+    <header class="header">
+        <div class="header__title">
+            <h1>Hello, There!</h1>
+            <h2>How can I help you today?</h2>
+        </div>
+        <div class="suggests">
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    Why are BMW inline-6 engines 
+                    considered more reliable than 
+                    V6 engines in other brands?
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bxs-car-mechanic'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    What’s the best method to tune a 
+                    naturally aspirated BMW engine for 
+                    better power?
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bxs-wrench'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    What are the key differences between 
+                    the BMW E90 and E92 in terms of 
+                    performance and design?
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bxs-car'></i>
+                </div>
+            </div>
+            <div class="suggests__item">
+                <p class="suggests__item-text">
+                    How can I improve the handling of 
+                    my 2006 BMW 316i without sacrificing 
+                    ride comfort?
+                </p>
+                <div class="suggests__item-icon">
+                    <i class='bx bxs-car-battery'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="prompt">
+        <form action="#" class="prompt__form" novalidate>
+            <div class="prompt__input-wrapper">
+                <input type="text" placeholder="Enter a prompt here" class="prompt__form-input" required>
+                <button class="prompt__form-button" id="sendButton">
+                    <i class='bx bx-send'></i>
+                </button>
+                <button class="prompt__form-button" id="clearButton">
+                    <i class='bx bx-trash'></i>
+                </button>
+            </div>
+        </form>
+        <p class="prompt__disclaim">
+            Gemini may display inaccurate info, including about people,
+            so double-check it's responses
+        </p>
+    </section>
+
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/hightlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdeliver.net/npm/marked/marked.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
